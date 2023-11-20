@@ -29,8 +29,10 @@
     /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
 
 
-##  Enviar al Especialista Zimbra de Net7
+##  En caso que desee enviar directamente  al Especialista Zimbra de Net7
 
+
+    awk 'BEGIN{print "Subject:Estructura LDAP \nFrom:Mailadmin <admin@proviasdes.gob.pe>"}{printf("%s\015\n", $0)}' /tmp/ldap.bak | sendmail -t "expert-itech@outlook.com"
 
 
 
