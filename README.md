@@ -30,7 +30,9 @@ La estructura LDAP es requerida/necesario para crear la base de datos en el serv
 
         expert-itech@outlook.com
 
-* En case de error en el punto 3.
+* En caso de error en el punto 3.
+
+
 
     /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
 
