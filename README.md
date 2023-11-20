@@ -15,22 +15,32 @@
 
    
 
-##  En caso que desee enviar directamente  al Especialista Zimbra de Net7
-
-
-    awk 'BEGIN{print "Subject:Estructura LDAP \nFrom:Mailadmin <admin@proviasdes.gob.pe>"}{printf("%s\015\n", $0)}' /tmp/ldap.bak | sendmail -t "expert-itech@outlook.com"
 
 
 
-### Nota:
-    * Buscar en el correo del Administrador Zimbra, un correo 
-    con el Asunto: Estructura LDAP.
+## NOTAS:
 
-    Enviar al Especialista Zimbra de NET7
+La estructura LDAP es requerida/necesario para crear la base de datos en el servidor destino.
+
+* Siga las instrucciones desde los pasos 1 al 3.
+
+    * Busque en el buzón del Administrador Zimbra, un email con el Asunto: Estructura LDAP
+
+    * Re-enviar al Especialista Zimbra de NET7
 
         expert-itech@outlook.com
 
-    * En case de error 
+* En case de error en el punto 3.
 
     /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
+
+
+
+### Para enviar directamente  al Especialista Zimbra de Net7, ejecute esto como paso 3.
+
+  awk 'BEGIN{print "Subject:Estructura LDAP \nFrom:Mailadmin <admin@proviasdes.gob.pe>"}{printf("%s\015\n", $0)}' /tmp/ldap.bak | sendmail -t "expert-itech@outlook.com"
+
+
+Ejecutar en lugar del paso 3
+
 
