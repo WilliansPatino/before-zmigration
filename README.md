@@ -11,7 +11,4 @@
     $ /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
 
 
-### En caso de error
-
-    $ ~/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
 
