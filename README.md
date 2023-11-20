@@ -7,7 +7,7 @@
 ##  Obtener la estructura Zimbra 
 
     
-    $  ./libexec/zmslapcat /tmp
+    ./libexec/zmslapcat /tmp
 
 ##  Copiar al email del Administrador  local 
 
@@ -16,7 +16,7 @@
 
 ### En case de error 
 
-    $ /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
+    /opt/zimbra/common/sbin/sendmail -v admin@proviasdes.gob.pe< /tmp/ldap.bak
 
 
 
