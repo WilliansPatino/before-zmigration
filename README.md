@@ -24,7 +24,7 @@ La estructura LDAP es requerida/necesario para crear la base de datos en el serv
 
 * Siga las instrucciones desde los pasos 1 al 3.
 
-    * Busque en el buzón del Administrador Zimbra, un email con el Asunto: Estructura LDAP
+    * Busque en el buzón del Administrador Zimbra, un email con el asunto: Estructura LDAP
 
     * Re-enviar al Especialista Zimbra de NET7
 
